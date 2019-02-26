@@ -1,0 +1,2 @@
+# kubeadm-vagrant-cluster-centos-windeos
+在Windows10下，基于vagrant和centos7利用kubeadm创建一个3节点的k8s集群
