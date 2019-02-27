@@ -29,7 +29,7 @@ sudo systemctl disable firewalld
 
 echo "禁用Selinux"
 setenforce 0
-sed -i 's/enforcing/disabled/g' /etc/selinux/config
+sed -i 's/enforcing/disabled/' /etc/selinux/config
 
 echo "使能iptable转发"
 cat >> /etc/sysctl.d/k8s.conf <<EOF
