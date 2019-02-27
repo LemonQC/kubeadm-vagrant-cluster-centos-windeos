@@ -76,7 +76,7 @@ yum install -y kubelet kubeadm kubectl
 
 #在kubelet中去掉关闭swap的限制
 
-sed -i 's/=/=--fail-swap-on=false/g' /etc/selinux/config
+sed -i 's/=/=--fail-swap-on=false/g'  /etc/sysconfig/kubelet
 
 echo "每个节点启动kubelet，可能无法启动，等初始化均完成，就正常了"
 systemctl daemon-reload
